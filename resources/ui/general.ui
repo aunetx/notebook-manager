@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="notebook-manager@aunetx">
+  <template class="General" parent="AdwPreferencesPage">
+    <property name="name">general</property>
+    <property name="title" translatable="yes">General</property>
+    <property name="icon-name">general-symbolic</property>
+
+
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Performance</property>
+        <property name="description" translatable="yes">Various options to tweak the performance.</property>
+
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Debug</property>
+            <property name="subtitle" translatable="yes">Makes the extension verbose in logs, activate when you need to report an issue.</property>
+            <property name="activatable-widget">debug</property>
+            <child>
+              <object class="GtkSwitch" id="debug">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+
+
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Reset preferences</property>
+        <property name="description" translatable="yes">Resets preferences of Notebook Manager irreversibly.</property>
+        <property name="header-suffix">
+          <object class="GtkButton" id="reset">
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <child>
+              <object class="GtkBox">
+                <property name="margin-start">20</property>
+                <property name="margin-end">20</property>
+                <property name="margin-top">6</property>
+                <property name="margin-bottom">6</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="margin-end">6</property>
+                    <property name="icon-name">reset-symbolic</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">Reset</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <style>
+              <class name="circular" />
+              <class name="destructive-action" />
+            </style>
+          </object>
+        </property>
+      </object>
+    </child>
+  </template>
+</interface>

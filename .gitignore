@@ -1,0 +1,10 @@
+/build/
+*~
+.idea/
+.ts-for-gir.js
+.vscode/
+jsconfig.json
+@types/
+resources/notebook-manager.gresource
+schemas/gschemas.compiled
+po/*.mo

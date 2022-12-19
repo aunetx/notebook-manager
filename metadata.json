@@ -1,0 +1,15 @@
+{
+    "description": "A GNOME Shell extension that permits you to manage your Jupyter notebooks directly from your desktop.\n\nYou can support my work by sponsoring me on:\n- github: https://github.com/sponsors/aunetx\n- ko-fi: https://ko-fi.com/aunetx\n\nNote: if the extension shows an error after updating, please make sure to restart your session to see if it persists. This is due to a bug in gnome shell, which I can't fix by myself.",
+    "name": "Notebook Manager",
+    "shell-version": [
+        "42",
+        "43"
+    ],
+    "url": "https://github.com/aunetx/notebook-manager",
+    "uuid": "notebook-manager@aunetx",
+    "settings-schema": "org.gnome.shell.extensions.notebook-manager",
+    "original-authors": [
+        "me@aunetx.dev"
+    ],
+    "version": 1
+}

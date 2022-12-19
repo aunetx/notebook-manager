@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <!-- GENERAL -->
+    <schema id="org.gnome.shell.extensions.notebook-manager" path="/org/gnome/shell/extensions/notebook-manager/">
+        <!-- DEBUG -->
+        <key type="b" name="debug">
+            <default>false</default>
+            <summary>Boolean, set to true to activate debug mode (more verbose journalctl logs)</summary>
+        </key>
+    </schema>
+</schemalist>
